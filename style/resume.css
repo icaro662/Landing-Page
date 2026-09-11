@@ -91,6 +91,25 @@ main p {
     text-wrap: balance;
 }
 
+#experience {
+    margin-top: 40px;
+}
+
+#experience h2,
+#education h2 {
+    color: var(--header-color);
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.resume-div {
+    border-left: 1px solid var(--border-color);
+    border-width: 2px;
+    padding-left: 20px;
+    line-height: 1.5;
+}
+
 footer {
     display: flex;
     flex-direction: row;
