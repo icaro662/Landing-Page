@@ -13,7 +13,7 @@ add a way to change the contents language. if english, change up to portuguese, 
 probably easiest way is, creating a different language version for each, and make some kinda of link up between them 
 
 
-## html pages
+## HTML PAGES
 
 resume.html:
 
@@ -23,10 +23,12 @@ projects.html:
 
 going have to be creative. thinking of name/description, then motive, then some additional info about it, maybe a active checkmark for things im working on
 
-knowledge.html: 
+~~knowledge.html:~~
 
-probably a initial short description of what i know, followed by actual diplomas etc.
+~~probably a initial short description of what i know, followed by actual diplomas etc.~~
 
-learning.html:
+~~learning.html:~~
 
-a focusing/ trying to learn/ would like to learn about some topic page
+~~a focusing/ trying to learn/ would like to learn about some topic page~~
+
+(removed learning and knowledege sections, might add learning, knowledge will be merged into resume)
