@@ -1,5 +1,4 @@
-:root {
-    
+:root {    
     --border-color: rgb(80, 79, 79);
     --header-color: rgb(253, 253, 251);
     --text-color: rgba(221, 220, 217, 0.774);
@@ -24,6 +23,34 @@
     font-style: normal;
 }
 
+html::-webkit-scrollbar {
+    display: none; 
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: rgb(26, 32, 26);
+    scroll-behavior: smooth;
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h3, h4, h5 {
+    color: var(--header-color);
+    margin: 0px;
+    padding: 0px;
+}
+
 a {
     text-decoration: none;
     color: var(--anchor-inactive-color);
@@ -37,42 +64,26 @@ a:hover {
     color: var(--anchor-color-active);
 }
 
-h3, h4, h5 {
+
+
+#experience {
+    margin-top: 20px;
+}
+
+#experience h2,
+#education h2,
+#skills h2 {
     color: var(--header-color);
-    margin: 0px;
+    font-size: 20px;
+    margin-bottom: 20px;
     padding: 0px;
 }
 
-html {
-    background-color: rgb(26, 32, 26);
-    scroll-behavior: smooth;
-    scrollbar-width: none; 
-    -ms-overflow-style: none; 
-}
-
-html::-webkit-scrollbar {
-    display: none; 
-}
-
-html, body {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    font-size: 12px;
-    min-height: 50px;
-    padding: 0px 215px;
-    border-bottom: 1px solid var(--border-color);
+#skills h3 {
+    color: var(--header-color);
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 0px;
 }
 
 .skills-div,
@@ -133,6 +144,16 @@ nav {
     padding: 5px;
 }
 
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 12px;
+    min-height: 50px;
+    padding: 0px 215px;
+    border-bottom: 1px solid var(--border-color);
+}
+
 nav h2 {
     color: var(--header-color);
     margin: 0px;
@@ -157,30 +178,9 @@ main h1 {
 }
 
 main p {
-    width: 75%;
-    text-wrap: balance;
+    width: 100%;
+    text-align: justify;
 }
-
-#experience {
-    margin-top: 20px;
-}
-
-#experience h2,
-#education h2,
-#skills h2 {
-    color: var(--header-color);
-    font-size: 20px;
-    margin-bottom: 20px;
-    padding: 0px;
-}
-
-#skills h3 {
-    color: var(--header-color);
-    font-size: 16px;
-    margin-bottom: 10px;
-    padding: 0px;
-}
-
 
 
 

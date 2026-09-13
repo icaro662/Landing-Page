@@ -1,11 +1,17 @@
 :root {
+    --border-color: rgb(80, 79, 79);
+    --header-color: rgb(253, 253, 251);
     --text-color: rgba(221, 220, 217, 0.774);
     --soft-text-color: rgba(133, 131, 136, 0.644);
+    --italic-text-color: rgba(217, 213, 223, 0.644);
+
     --anchor-color-active: rgba(82, 129, 231, 0.986);
     --anchor-color-hover: rgba(255, 255, 255, 0.986);
     --anchor-inactive-color: rgb(112, 114, 117);
-    --border-color: rgb(80, 79, 79);
-    --header-color: rgb(253, 253, 251);
+
+    --span-border-color: rgb(136, 134, 134);
+    --span-text-color: rgb(213, 212, 208);
+    --span-background-color: rgba(51, 52, 53, 0.986);
 }
 
 * { 
@@ -15,6 +21,28 @@
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
+}
+
+html::-webkit-scrollbar {
+    display: none; 
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: rgb(26, 32, 26);
+    scroll-behavior: smooth;
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 a {
@@ -30,36 +58,15 @@ a:hover {
     color: var(--anchor-color-active);
 }
 
-html {
-    background-color: rgb(26, 32, 26);
-    scroll-behavior: smooth;
-    scrollbar-width: none; 
-    -ms-overflow-style: none; 
-}
 
-html::-webkit-scrollbar {
-    display: none; 
-}
 
-html, body {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-nav {
+.contacts {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    font-size: 12px;
-    min-height: 50px;
-    padding: 0px 215px;
-    border-bottom: 1px solid var(--border-color);
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin: 16px 0px;
 }
 
 .redirects {
@@ -72,6 +79,16 @@ nav {
     gap: 15px;
     margin: 0px;
     padding: 8px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 12px;
+    min-height: 50px;
+    padding: 0px 215px;
+    border-bottom: 1px solid var(--border-color);
 }
 
 nav h2 {
@@ -98,8 +115,8 @@ main h1 {
 }
 
 main p {
-    width: 75%;
-    text-wrap: balance;
+    width: 100%;
+    text-align: justify;
 }
 
 footer {
@@ -120,11 +137,3 @@ footer p {
     font-size: 15px;
 }
 
-.contacts {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    margin: 16px 0px;
-}
