@@ -1,14 +1,19 @@
-:root {    
+:root {
+    --background-color: #1a1315;
+
     --border-color: rgb(80, 79, 79);
-    --header-color: rgb(253, 253, 251);
+    --header-color: rgb(226, 224, 218);
     --text-color: rgba(221, 220, 217, 0.774);
     --soft-text-color: rgba(133, 131, 136, 0.644);
     --italic-text-color: rgba(217, 213, 223, 0.644);
 
     --anchor-color-active: rgba(82, 129, 231, 0.986);
-    --anchor-color-hover: rgba(255, 255, 255, 0.986);
+    --anchor-color-hover: rgba(232, 230, 225, 0.95);
     --anchor-inactive-color: rgb(112, 114, 117);
-    
+    --header-anchor-color-hover: rgba(82, 129, 231, 0.986);
+    --alternate-inactive-anchor-color: rgba(232, 230, 225, 0.95);
+    --alternate-anchor-color-hover: rgba(82, 129, 231, 0.986);
+
     --span-border-color: rgb(136, 134, 134);
     --span-text-color: rgb(213, 212, 208);
     --span-background-color: rgba(51, 52, 53, 0.986);
@@ -33,7 +38,7 @@ html, body {
 }
 
 html {
-    background-color: rgb(26, 32, 26);
+    background-color: var(--background-color);
     scroll-behavior: smooth;
     scrollbar-width: none; 
     -ms-overflow-style: none; 
@@ -64,8 +69,6 @@ a:hover {
     color: var(--anchor-color-active);
 }
 
-
-
 #experience {
     margin-top: 20px;
 }
@@ -90,6 +93,14 @@ a:hover {
 .resume-div,
 .education-div {
     line-height: 1.5;
+}
+
+.resume-div a {
+    color: var(--alternate-inactive-anchor-color);
+}
+
+.resume-div a:hover {
+    color: var(--alternate-anchor-color-hover);
 }
 
 .timelapse {
@@ -150,7 +161,7 @@ nav {
     justify-content: space-around;
     font-size: 12px;
     min-height: 50px;
-    padding: 0px 215px;
+    padding: 0px 235px;
     border-bottom: 1px solid var(--border-color);
 }
 
