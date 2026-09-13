@@ -1,12 +1,14 @@
 :root {
+    --background-color: #1a1315;
+
     --border-color: rgb(80, 79, 79);
-    --header-color: rgb(253, 253, 251);
+    --header-color: rgb(226, 224, 218);
     --text-color: rgba(221, 220, 217, 0.774);
     --soft-text-color: rgba(133, 131, 136, 0.644);
     --italic-text-color: rgba(217, 213, 223, 0.644);
 
     --anchor-color-active: rgba(82, 129, 231, 0.986);
-    --anchor-color-hover: rgba(255, 255, 255, 0.986);
+    --anchor-color-hover: rgba(232, 230, 225, 0.95);
     --anchor-inactive-color: rgb(112, 114, 117);
 
     --span-border-color: rgb(136, 134, 134);
@@ -33,7 +35,7 @@ html, body {
 }
 
 html {
-    background-color: rgb(26, 32, 26);
+    background-color: var(--background-color);
     scroll-behavior: smooth;
     scrollbar-width: none; 
     -ms-overflow-style: none; 
@@ -57,8 +59,6 @@ a:hover {
 .current {
     color: var(--anchor-color-active);
 }
-
-
 
 .contacts {
     display: flex;
@@ -87,7 +87,7 @@ nav {
     justify-content: space-around;
     font-size: 12px;
     min-height: 50px;
-    padding: 0px 215px;
+    padding: 0px 235px;
     border-bottom: 1px solid var(--border-color);
 }
 
