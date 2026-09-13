@@ -21,7 +21,7 @@ heavily inspired by source material. little cards containing type of experience,
 
 projects.html:
 
-going have to be creative. thinking of name/description, then motive, then some additional info about it, maybe a active checkmark for things im working on
+thinking of name/description, then motive, then some additional info about it, maybe a active checkmark for things im working on
 
 ~~knowledge.html:~~
 
