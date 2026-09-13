@@ -1,11 +1,18 @@
 :root {
+    
+    --border-color: rgb(80, 79, 79);
+    --header-color: rgb(253, 253, 251);
     --text-color: rgba(221, 220, 217, 0.774);
     --soft-text-color: rgba(133, 131, 136, 0.644);
+    --italic-text-color: rgba(217, 213, 223, 0.644);
+
     --anchor-color-active: rgba(82, 129, 231, 0.986);
     --anchor-color-hover: rgba(255, 255, 255, 0.986);
     --anchor-inactive-color: rgb(112, 114, 117);
-    --border-color: rgb(80, 79, 79);
-    --header-color: rgb(253, 253, 251);
+    
+    --span-border-color: rgb(136, 134, 134);
+    --span-text-color: rgb(213, 212, 208);
+    --span-background-color: rgba(51, 52, 53, 0.986);
 }
 
 * { 
@@ -28,6 +35,12 @@ a:hover {
 
 .current {
     color: var(--anchor-color-active);
+}
+
+h3, h4, h5 {
+    color: var(--header-color);
+    margin: 0px;
+    padding: 0px;
 }
 
 html {
@@ -62,6 +75,27 @@ nav {
     border-bottom: 1px solid var(--border-color);
 }
 
+.skills-div,
+.resume-div,
+.education-div {
+    line-height: 1.5;
+}
+
+.timelapse {
+    font-style: italic;
+    color: var(--italic-text-color);
+    font-size: 14px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin: 16px 0px;
+}
+
 .redirects {
     font-size: 14px;
     color: var(--soft-text-color);
@@ -72,6 +106,31 @@ nav {
     gap: 15px;
     margin: 0px;
     padding: 8px;
+}
+
+.skills-div {
+    border-left: 1px solid var(--border-color);
+    border-width: 2px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    height: 5rem;
+}
+
+.resume-div {
+    border-left: 1px solid var(--border-color);
+    border-width: 2px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.skills-div span {
+    color: var(--span-text-color);
+    font-size: 14px;
+    background-color: var(--span-background-color);
+    border: 2px solid var(--span-border-color);
+    border-radius: 15px;
+    margin-right: 10px;
+    padding: 5px;
 }
 
 nav h2 {
@@ -103,23 +162,27 @@ main p {
 }
 
 #experience {
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 #experience h2,
-#education h2 {
+#education h2,
+#skills h2 {
     color: var(--header-color);
     font-size: 20px;
-    margin: 0px;
+    margin-bottom: 20px;
     padding: 0px;
 }
 
-.resume-div {
-    border-left: 1px solid var(--border-color);
-    border-width: 2px;
-    padding-left: 20px;
-    line-height: 1.5;
+#skills h3 {
+    color: var(--header-color);
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 0px;
 }
+
+
+
 
 footer {
     display: flex;
@@ -132,6 +195,8 @@ footer {
     border-top: 1px solid var(--border-color);
 }
 
+
+
 footer p {
     color: var(--soft-text-color);
     margin: 0px;
@@ -139,11 +204,3 @@ footer p {
     font-size: 15px;
 }
 
-.contacts {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    margin: 16px 0px;
-}
