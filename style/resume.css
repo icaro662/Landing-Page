@@ -172,6 +172,15 @@ nav h2 {
     padding-top: 12px;
 }
 
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: min(680px, calc(100% - 32px));
+    margin: 0 auto;
+}
+
 main {
     display: flex;
     flex-direction: column;
