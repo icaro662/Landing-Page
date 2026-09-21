@@ -17,7 +17,8 @@
     --span-background-color: rgba(51, 52, 53, 0.986);
 }
 
-* { 
+* {
+    box-sizing: border-box;
     text-decoration: none;
     color: var(--text-color);
     font-family: "Jost", sans-serif;
@@ -110,10 +111,11 @@ a:hover {
 nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     font-size: 12px;
     min-height: 50px;
-    padding: 0px 235px;
+    width: 100%;
+    padding: 0px;
     border-bottom: 1px solid var(--border-color);
 }
 
@@ -138,7 +140,8 @@ main {
     flex-direction: column;
     align-self: center;
     margin-top: 80px;
-    max-width: 45%;
+    width: min(680px, calc(100% - 32px));
+    max-width: none;
     flex: 1;
 }
 
@@ -159,8 +162,8 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    min-width: 50%;
-    padding: 0px 285px;
+    width: 100%;
+    padding: 0px clamp(16px, 12vw, 285px);
     gap: 10px;
     border-top: 1px solid var(--border-color);
 }
