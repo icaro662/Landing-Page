@@ -172,6 +172,14 @@ footer p {
     font-size: 15px;
 }
 
+.footer-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: min(680px, calc(100% - 32px));
+}
+
 @media (max-width: 640px) {
     nav {
         align-items: center;
