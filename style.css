@@ -146,3 +146,45 @@ footer p {
     font-size: 15px;
 }
 
+@media (max-width: 640px) {
+    nav {
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 4px 16px;
+        padding: 8px 0px;
+    }
+
+    nav h2 {
+        padding: 4px 0;
+    }
+
+    .redirects {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6px 14px;
+        padding: 4px 0;
+    }
+
+    main {
+        margin-top: 48px;
+    }
+
+    main p {
+        text-align: left;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 0;
+        padding: 8px 16px;
+    }
+
+    footer p {
+        text-align: center;
+    }
+
+    .contacts {
+        margin: 4px 0;
+    }
+}
