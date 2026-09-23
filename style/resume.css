@@ -133,7 +133,7 @@ a:hover {
 
 .skills-div {
     border-left: 1px solid var(--border-color);
-    border-width: 2px;
+    border-width: 3px;
     padding-left: 20px;
     margin-bottom: 20px;
     min-height: 5rem;
@@ -141,7 +141,13 @@ a:hover {
 
 .resume-div {
     border-left: 1px solid var(--border-color);
-    border-width: 2px;
+    border-width: 3px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+.education-div {
+    border-left: 1px solid var(--border-color);
+    border-width: 3px;
     padding-left: 20px;
     margin-bottom: 20px;
 }
@@ -151,10 +157,10 @@ a:hover {
     color: var(--span-text-color);
     font-size: 14px;
     background-color: var(--span-background-color);
-    border: 2px solid var(--span-border-color);
-    border-radius: 15px;
+    border: 1px solid var(--span-border-color);
+    border-radius: 20px;
     margin-right: 10px;
-    padding: 5px;
+    padding: 10px;
 }
 
 nav {

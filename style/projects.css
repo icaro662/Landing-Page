@@ -64,7 +64,7 @@ a:hover {
 
 .project-div {
     border-left: 1px solid var(--border-color);
-    border-width: 2px;
+    border-width: 3px;
     padding-left: 20px;
     margin-bottom: 20px;
 }
@@ -106,6 +106,10 @@ a:hover {
 #personal-projects h2,
 #personal-projects h3 {
     color: var(--header-color);
+}
+
+#personal-projects { 
+    margin-bottom: 20px;
 }
 
 nav {
